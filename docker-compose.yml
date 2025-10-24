@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - mcp
+  mcp:
+    build: ./mcp
+    ports:
+      - "9000:9000"
+    env_file:
+      - .env
+  # Chroma can be run locally in-process; if you have a managed Chroma container, add it here.
