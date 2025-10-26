@@ -14,4 +14,3 @@ services:
       - "9000:9000"
     env_file:
       - .env
-  # Chroma can be run locally in-process; if you have a managed Chroma container, add it here.
