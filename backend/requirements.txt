@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+requests
+aiohttp
+sentence-transformers
+faiss-cpu
+chromadb
+openai
+python-dotenv
+gunicorn
